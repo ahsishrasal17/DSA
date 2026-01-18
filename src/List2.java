@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class List2 {
@@ -24,5 +25,18 @@ public class List2 {
         ArrayList<String> list4 = new ArrayList<>(list2);
         list4.add("Strawberry");
         System.out.println(list4);
+
+        List<Integer> list5 = new ArrayList<>();
+        list5.add(2);
+        list5.add(1);
+        list5.add(3);
+
+        Integer[] array = list5.toArray(new Integer[0]);
+        for(int i = 0; i < array.length; i++){
+            System.out.println(i);
+        }
+
+        list5.sort(null);
+        System.out.println(list5);
     }
 }
